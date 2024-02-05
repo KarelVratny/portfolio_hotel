@@ -193,25 +193,24 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
+          data-bs-target="#hamburgermenu"
+          aria-controls="hamburgermenu"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-    </nav>
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-primary p-4">
-        <ul>
-          <li><a class="navbar-brand" href="#home">Home</a></li>
-          <li><a class="navbar-brand" href="#history">History</a></li>
-          <li><a class="navbar-brand" href="#pricing">Pricing</a></li>
-          <li><a class="navbar-brand" href="#gallery">Gallery</a></li>
-          <li><a class="navbar-brand" href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      </div><div class="collapse" id="hamburgermenu">
+        <div class="bg-primary p-4">
+          <ul>
+            <li><a class="navbar-brand" href="#home">Home</a></li>
+            <li><a class="navbar-brand" href="#history">History</a></li>
+            <li><a class="navbar-brand" href="#pricing">Pricing</a></li>
+            <li><a class="navbar-brand" href="#gallery">Gallery</a></li>
+            <li><a class="navbar-brand" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+    </nav>    
     </div>
     <!-- History -->
     <section id="history">
@@ -406,7 +405,7 @@
       </div>
     </section>
     <!-- Gallery -->
-    <div id="gallery">
+    <section id="gallery">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -509,9 +508,65 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- Contacts -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col font-cursive text-center">
+            <h2>Contact us</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d617.047567015641!2d-80.13156916711847!3d25.776206409517343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b4f2aa5ab7c7%3A0xc40f21922a3a0ce0!2s626%20Ocean%20Dr%2C%20Miami%20Beach%2C%20FL%2033139%2C%20USA!5e0!3m2!1sen!2scz!4v1707136934071!5m2!1sen!2scz"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col"><i class="fa-brands fa-facebook fa-5x"></i></div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <i class="fa-brands fa-x-twitter fa-5x"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <i class="fa-brands fa-instagram fa-5x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <i class="fa-solid fa-phone"></i>
+            <p>+420123456789</p>
+            <i class="fa-regular fa-envelope"></i>
+            <p>southbeach@hotel.at</p>
+            <i class="fa-solid fa-house"></i>
+            <p>
+              626 Ocean Dr <br />
+              Miami Beach <br />
+              33139 <br />
+              Florida
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Bootstrap JavaScript -->
     <script src="bootstrap.bundle.min.js"></script>
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/f64b923316.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- JavaScript -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {

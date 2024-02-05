@@ -12023,8 +12023,9 @@ ul li {
   color: #febbac;
 }
 
-#rooms .carousel-indicators button {
-  background-color: black;
-  color: #febbac;
-  border: solid 1px green;
+.carousel-caption h5, .carousel-caption .h5 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  padding: 8px;
+  margin: 0;
 }

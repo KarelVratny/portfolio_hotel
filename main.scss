@@ -48,8 +48,15 @@ ul li {
 .card .card-body h5 {
   color: $primary;
 }
-#rooms .carousel-indicators button {
-  background-color: black;
-  color: $primary;
-  border: solid 1px green;
+.carousel-caption h5 {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding: 8px;
+  margin: 0;
 }
+// .carousel-indicators
