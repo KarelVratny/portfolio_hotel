@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vratny hotel</title>
+    <link rel="stylesheet" href="main.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- 1. sekce - Home -->
+    <section id="home">
+      <div class="container">
+        <!-- Hotel -->
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="text-light font-cursive">South Beach</h1>
+            <h2 class="text-primary">HOTEL</h2>
+          </div>
+        </div>
+        <!-- Form -->
+        <div class="row">
+          <div class="col">
+            <form class="bg-black-op40">
+              <h2 class="text-center">Quick Booking</h2>
+              <!-- Name -->
+              <div class="mb-3">
+                <label for="name" class="form-label">Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name"
+                  placeholder="Johnny"
+                />
+              </div>
+              <!-- Surname -->
+              <div class="mb-3">
+                <label for="surname" class="form-label">Surname:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="surname"
+                  aria-describedby="surname"
+                  placeholder="English"
+                />
+              </div>
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="email"
+                  placeholder="johnnyenglish@example.com"
+                />
+              </div>
+              <!-- Phone -->
+              <div class="mb-3">
+                <label for="phoneNumber" class="form-label"
+                  >Phone number:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phoneNumber"
+                  aria-describedby="phone number"
+                  placeholder="+420123456789"
+                />
+              </div>
+              <!-- Guests -->
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="mb-3">
+                    <label for="numberOfGuests" class="form-label"
+                      >Number of guests:</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="numberOfGuests"
+                      aria-describedby="number of guests"
+                      value="1"
+                    />
+                  </div>
+                </div>
+                <!-- Date of arrival -->
+                <div class="col-sm-4">
+                  <div class="mb-3">
+                    <label for="dateOfArrival" class="form-label"
+                      >Date of arrival:</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="dateOfArrival"
+                      aria-describedby="date of arrival"
+                    />
+                  </div>
+                </div>
+                <!-- Date of departure -->
+                <div class="col-sm-4">
+                  <div class="mb-3">
+                    <label for="dateOfDeparture" class="form-label"
+                      >Date of departure:</label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="dateOfDeparture"
+                      aria-describedby="date of departure"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- Buttons -->
+              <div class="row">
+                <div class="col-sm-6 mb-3">
+                  <button type="button" class="btn btn-secondary w-100">
+                    Book now
+                  </button>
+                </div>
+                <div class="col-sm-6 mb-3">
+                  <button
+                    type="button"
+                    class="btn btn-primary w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#virtual-tour"
+                  >
+                    Virtual tour
+                  </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal" tabindex="-1" id="virtual-tour">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Exploring ...</h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <iframe
+                          width="100%
+                          "
+                          height="100%"
+                          src="https://www.youtube.com/embed/TeyLV4fA_Jc"
+                          title="Miami Beach Walking Tour - South Beach"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Navbar -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <nav class="navbar sticky-top navbar-expand-sm bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand font-cursive" href="#">South Beach</a>
+              <a class="navbar-brand d-none d-sm-block" href="#home">Home</a>
+              <a class="navbar-brand d-none d-sm-block" href="#history"
+                >History</a
+              >
+              <a class="navbar-brand d-none d-sm-block" href="#pricing"
+                >Pricing</a
+              >
+              <a class="navbar-brand d-none d-sm-block" href="#gallery"
+                >Gallery</a
+              >
+              <a class="navbar-brand d-none d-sm-block" href="#contact"
+                >Contact</a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+          <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-primary p-4">
+              <ul>
+                <li><a class="navbar-brand" href="#home">Home</a></li>
+                <li><a class="navbar-brand" href="#history">History</a></li>
+                <li><a class="navbar-brand" href="#pricing">Pricing</a></li>
+                <li><a class="navbar-brand" href="#gallery">Gallery</a></li>
+                <li><a class="navbar-brand" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript -->
+    <script src="bootstrap.bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        //navbar
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        const collapseNavbar = function () {
+          // Ověříme, zda je navigační menu v rozbalovacím režimu
+          if (window.innerWidth < 992) {
+            const bsCollapse = new bootstrap.Collapse(
+              navbarToggler.nextElementSibling,
+              {
+                toggle: false,
+              }
+            );
+            bsCollapse.hide();
+          }
+        };
+      });
+
+      navLinks.forEach(function (link) {
+        link.addEventListener("click", collapseNavbar);
+      });
+
+      //Vysvětlení:
+      // nextElementSibling je JavaScriptová vlastnost, která vrátí element, který je bezprostředně
+      // následující sourozencem daného elementu v DOM stromu. V tomto případě hledáte element,
+      // který je hned za navbarToggler v HTML struktuře. V kontextu Bootstrap navigace, tento element
+      // obvykle reprezentuje rozbalovací část navigační lišty. Pak vytváříte instanci
+      // Bootstrap Collapse komponenty pro tento element, kterou pak můžete programově skrýt.
+
+      //modal
+      document.querySelectorAll(".modal").forEach(function (modal) {
+        modal.addEventListener("hide.bs.modal", function () {
+          const memory = this.innerHTML;
+          this.innerHTML = memory;
+        });
+      });
+
+      //Vysvětlení:
+      // document.querySelectorAll('.modal').forEach(function(modal) {...}):
+      // Vybere všechny elementy s třídou modal a pro každý z nich provede funkci uvedenou v těle forEach.
+      // modal.addEventListener('hide.bs.modal', function() {...}): Přidává posluchače událostí pro každé modální okno,
+      // který reaguje na událost hide.bs.modal - událost specifickou pro Bootstrap, která nastane, když se modální okno začíná skrývat.
+      // var memory = this.innerHTML; this.innerHTML = memory;: Ukládá aktuální HTML obsah modálního okna do proměnné memory a
+      // poté ho okamžitě nastavuje zpět. Toto zachovává aktuální stav modálního okna, i když je skryto.
+    </script>
+  </body>
+</html>
