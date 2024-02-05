@@ -406,6 +406,110 @@
       </div>
     </section>
     <!-- Gallery -->
+    <div id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div id="rooms" class="carousel slide carousel-fade">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#rooms"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#rooms"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#rooms"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#rooms"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/economy.jpg"
+                    class="d-block w-100"
+                    alt="economy"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Economy</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/standart.jpg"
+                    class="d-block w-100"
+                    alt="standart"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Standart</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/deluxe.jpg"
+                    class="d-block w-100"
+                    alt="deluxe"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Deluxe</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/superior.jpg"
+                    class="d-block w-100"
+                    alt="superior"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Superior</h5>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#rooms"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#rooms"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap JavaScript -->
     <script src="bootstrap.bundle.min.js"></script>
     <!-- JavaScript -->
@@ -426,27 +530,26 @@
             bsCollapse.hide();
           }
         };
-      });
 
-      navLinks.forEach(function (link) {
-        link.addEventListener("click", collapseNavbar);
-      });
+        navLinks.forEach(function (link) {
+          link.addEventListener("click", collapseNavbar);
+        });
 
-      //Vysvětlení:
-      // nextElementSibling je JavaScriptová vlastnost, která vrátí element, který je bezprostředně
-      // následující sourozencem daného elementu v DOM stromu. V tomto případě hledáte element,
-      // který je hned za navbarToggler v HTML struktuře. V kontextu Bootstrap navigace, tento element
-      // obvykle reprezentuje rozbalovací část navigační lišty. Pak vytváříte instanci
-      // Bootstrap Collapse komponenty pro tento element, kterou pak můžete programově skrýt.
+        //Vysvětlení:
+        // nextElementSibling je JavaScriptová vlastnost, která vrátí element, který je bezprostředně
+        // následující sourozencem daného elementu v DOM stromu. V tomto případě hledáte element,
+        // který je hned za navbarToggler v HTML struktuře. V kontextu Bootstrap navigace, tento element
+        // obvykle reprezentuje rozbalovací část navigační lišty. Pak vytváříte instanci
+        // Bootstrap Collapse komponenty pro tento element, kterou pak můžete programově skrýt.
 
-      //modal
-      document.querySelectorAll(".modal").forEach(function (modal) {
-        modal.addEventListener("hide.bs.modal", function () {
-          const memory = this.innerHTML;
-          this.innerHTML = memory;
+        //modal
+        document.querySelectorAll(".modal").forEach(function (modal) {
+          modal.addEventListener("hide.bs.modal", function () {
+            const memory = this.innerHTML;
+            this.innerHTML = memory;
+          });
         });
       });
-
       //Vysvětlení:
       // document.querySelectorAll('.modal').forEach(function(modal) {...}):
       // Vybere všechny elementy s třídou modal a pro každý z nich provede funkci uvedenou v těle forEach.

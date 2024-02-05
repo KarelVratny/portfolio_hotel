@@ -12022,3 +12022,9 @@ ul li {
 .card .card-body h5, .card .card-body .h5 {
   color: #febbac;
 }
+
+#rooms .carousel-indicators button {
+  background-color: black;
+  color: #febbac;
+  border: solid 1px green;
+}
