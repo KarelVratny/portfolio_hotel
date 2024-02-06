@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vratny South Beach Hotel</title>
     <link rel="stylesheet" href="main.css" />
-    <!-- font -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <!-- 1. sekce - Home -->
+    <!-- Home -->
     <section id="home">
       <div class="container">
         <!-- Hotel -->
@@ -274,6 +274,7 @@
           <div class="col font-cursive text-center"><h2>Prices</h2></div>
         </div>
         <div class="row">
+          <!-- Economy card -->
           <div class="col-lg-3 col-md-6 col-12 my-2">
             <div class="card">
               <img src="img/economy.jpg" class="card-img-top" alt="economy" />
@@ -309,6 +310,7 @@
               </div>
             </div>
           </div>
+          <!-- Standart card -->
           <div class="col-lg-3 col-md-6 col-12 my-2">
             <div class="card">
               <img src="img/standart.jpg" class="card-img-top" alt="standart" />
@@ -344,6 +346,7 @@
               </div>
             </div>
           </div>
+          <!-- Deluxe card -->
           <div class="col-lg-3 col-md-6 col-12 my-2">
             <div class="card">
               <img src="img/deluxe.jpg" class="card-img-top" alt="deluxe" />
@@ -379,6 +382,7 @@
               </div>
             </div>
           </div>
+          <!-- Superior card -->
           <div class="col-lg-3 col-md-6 col-12 my-2">
             <div class="card">
               <img src="img/superior.jpg" class="card-img-top" alt="superior" />
@@ -425,9 +429,11 @@
             <h2 class="font-cursive text-center">Gallery</h2>
           </div>
         </div>
+        <!-- Carousel -->
         <div class="row">
           <div class="col">
             <div id="rooms" class="carousel slide carousel-fade">
+              <!-- Buttons - bottom -->
               <div class="carousel-indicators">
                 <button
                   type="button"
@@ -456,6 +462,7 @@
                   aria-label="Slide 4"
                 ></button>
               </div>
+              <!-- Imgs -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
@@ -498,6 +505,7 @@
                   </div>
                 </div>
               </div>
+              <!-- Buttons - prev/next -->
               <button
                 class="carousel-control-prev"
                 type="button"
@@ -536,6 +544,7 @@
           </div>
         </div>
         <div class="row">
+          <!-- Google maps -->
           <div class="col-sm-4">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d617.047567015641!2d-80.13156916711847!3d25.776206409517343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b4f2aa5ab7c7%3A0xc40f21922a3a0ce0!2s626%20Ocean%20Dr%2C%20Miami%20Beach%2C%20FL%2033139%2C%20USA!5e0!3m2!1sen!2scz!4v1707136934071!5m2!1sen!2scz"
@@ -547,6 +556,7 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+          <!-- Socials -->
           <div class="col-sm-4 text-center">
             <div class="row">
               <div class="col">
@@ -570,6 +580,7 @@
               </div>
             </div>
           </div>
+          <!-- Contacts -->
           <div class="col-sm-4 text-center">
             <adress>
               <i class="fa-solid fa-phone"></i><br />
@@ -607,7 +618,6 @@
         const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
         const navbarToggler = document.querySelector(".navbar-toggler");
         const collapseNavbar = function () {
-          // Ověříme, zda je navigační menu v rozbalovacím režimu
           if (window.innerWidth < 992) {
             const bsCollapse = new bootstrap.Collapse(
               navbarToggler.nextElementSibling,
@@ -622,14 +632,6 @@
         navLinks.forEach(function (link) {
           link.addEventListener("click", collapseNavbar);
         });
-
-        //Vysvětlení:
-        // nextElementSibling je JavaScriptová vlastnost, která vrátí element, který je bezprostředně
-        // následující sourozencem daného elementu v DOM stromu. V tomto případě hledáte element,
-        // který je hned za navbarToggler v HTML struktuře. V kontextu Bootstrap navigace, tento element
-        // obvykle reprezentuje rozbalovací část navigační lišty. Pak vytváříte instanci
-        // Bootstrap Collapse komponenty pro tento element, kterou pak můžete programově skrýt.
-
         //modal
         document.querySelectorAll(".modal").forEach(function (modal) {
           modal.addEventListener("hide.bs.modal", function () {
@@ -638,13 +640,6 @@
           });
         });
       });
-      //Vysvětlení:
-      // document.querySelectorAll('.modal').forEach(function(modal) {...}):
-      // Vybere všechny elementy s třídou modal a pro každý z nich provede funkci uvedenou v těle forEach.
-      // modal.addEventListener('hide.bs.modal', function() {...}): Přidává posluchače událostí pro každé modální okno,
-      // který reaguje na událost hide.bs.modal - událost specifickou pro Bootstrap, která nastane, když se modální okno začíná skrývat.
-      // var memory = this.innerHTML; this.innerHTML = memory;: Ukládá aktuální HTML obsah modálního okna do proměnné memory a
-      // poté ho okamžitě nastavuje zpět. Toto zachovává aktuální stav modálního okna, i když je skryto.
     </script>
   </body>
 </html>
